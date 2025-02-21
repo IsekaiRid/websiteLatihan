@@ -15,29 +15,35 @@
         </div>
     </a>
 
-    <a href="index.php?page=logistik" class="block">
+    <a href="index.php?page=konfimasi" class="block">
         <div class="p-2.5 mt-3 flex items-center rounded-md px-3 duration-300 cursor-pointer hover:bg-blue-600 text-white">
             <i class="bi bi-box-seam text-sm"></i>
-            <span class="text-[14px] ml-3 text-gray-200 font-semibold">Barang Logistik</span>
+            <span class="text-[14px] ml-3 text-gray-200 font-semibold">Konfimasi</span>
         </div>
     </a>
 
-    <a href="index.php?page=gudang" class="block">
+    <a href="index.php?page=barang" class="block">
         <div class="p-2.5 mt-3 flex items-center rounded-md px-3 duration-300 cursor-pointer hover:bg-blue-600 text-white">
             <i class="bi bi-boxes"></i>
-            <span class="text-[14px] ml-3 text-gray-200 font-semibold">gudang</span>
+            <span class="text-[14px] ml-3 text-gray-200 font-semibold">Barang</span>
         </div>
     </a>
 
-    <div class="p-2.5 mt-3 flex items-center rounded-md px-3 duration-300 cursor-pointer hover:bg-blue-600 text-white">
+    <a href="index.php?page=info_gudang" class="block">
+        <div class="p-2.5 mt-3 flex items-center rounded-md px-3 duration-300 cursor-pointer hover:bg-blue-600 text-white">
+        <i class="bi bi-clipboard-data"></i>
+            <span class="text-[14px] ml-3 text-gray-200 font-semibold">Info Gudang</span>
+        </div>
+    </a>
+
+    <div class="p-2.5 mt-3 flex items-center rounded-md px-3 duration-300 cursor-pointer hover:bg-blue-600 text-white" onclick="window.location.href='index.php?page=logout'">
         <i class="bi bi-box-arrow-in-right text-sm"></i>
         <span class="text-[14px] ml-3 text-gray-200 font-semibold">Logout</span>
     </div>
 </div>
 
 <!-- Toggle Button -->
-<button id="toggleBtn"
-    class="fixed bottom-5 right-5 bg-blue-600 text-white p-3 rounded-full w-13 h-13 shadow-lg transition-all duration-300 z-10 cursor-pointer">
+<button id="toggleBtn" class="fixed bottom-5 right-5 bg-blue-600 text-white p-3 rounded-full w-13 h-13 shadow-lg transition-all duration-300 z-10 cursor-pointer">
     ☰
 </button>
 

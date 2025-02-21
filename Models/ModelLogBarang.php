@@ -1,6 +1,6 @@
 <?php
 require_once './config/Database.php';
-class ModelGudang
+class ModelLogBarang
 {
     private $con;
     private $kon;
@@ -11,13 +11,15 @@ class ModelGudang
         $this->kon = new Database;
         $this->con = $this->kon->koneksi();
     }
-    
-    public function GetGudangAll()
+
+    public function GetLog()
     {
-        $query = 'SELECT * FROM gudang g JOIN Logistik_Barang lb ON g.id_barang = lb.id_barang;';
+        $query = 'SELECT * FROM log_gudang lg LEFT JOIN barang b ON lg.Id_barang = b.id_barang LEFT JOIN user u ON lg.Id_konfirmasi = u.id_usert;';
         $result = mysqli_query($this->con, $query);
         if (mysqli_num_rows($result) > 0) {
             return $result;
+        } else {
+            return NULL;
         }
     }
 }
